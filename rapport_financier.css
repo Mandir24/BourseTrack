@@ -1,0 +1,127 @@
+/* Auteurs : Charles , Benoit
+    Partie css : Style du fichier html
+    Date de création : 15 décembre 2024
+    SAE : Collecte automatisée de données web 
+*/
+
+/* VARIABLES (Ajoutées pour une meilleure gestion des couleurs) */
+:root {
+    --color-primary: #4477f0; /* Light Gray for background */
+    --color-text-title: #333;
+    --color-positive: #d4edda; /* Light Green */
+    --color-negative: #f8d7da; /* Light Red */
+    --color-hover: #90e9ee;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--color-background);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin: 40px 0 20px 0;
+    color: var(--color-text-title);
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 3px solid var(--color-primary); /* Ajout d'une ligne de séparation */
+    padding-bottom: 10px;
+    display: inline-block; /* Pour que la ligne s'adapte au texte */
+}
+
+/* Style pour l'image (si elle est centrée) */
+p img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+table {
+    width: 90%;
+    max-width: 1100px; /* Limite la taille sur grand écran */
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Pour que les coins arrondis fonctionnent bien avec le contenu */
+}
+
+th, td {
+    border-left: 1px solid #e0e0e0; /* Bordures plus légères */
+    border-right: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid #2a5bb3; /* Bordure plus foncée en bas des th */
+}
+
+td:first-child {
+    font-weight: bold;
+    text-align: left; /* Meilleure lisibilité pour les noms */
+}
+
+/* Style survol ligne */
+tr:hover {
+    background-color: var(--color-hover) !important;
+    transition: background-color 0.3s ease;
+}
+.positive {
+    background-color: var(--color-positive); 
+}
+.negative {
+    background-color: var(--color-negative); 
+}
+
+/* Styles pour la section Actualités */
+div {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+div h2 {
+    color: var(--color-primary);
+    font-size: 1.5em;
+    margin-top: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#_test {
+    font-weight: bold;
+    color: var(--color-text-title);
+    margin-bottom: 5px;
+    padding-top: 10px;
+    border-top: 1px dashed #e0e0e0;
+}
+
+#_test a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+#_test a:hover {
+    text-decoration: underline;
+}
+
+.test {
+    font-style: normal; /* Retrait de l'italique pour une meilleure lisibilité */
+    color: #555;
+    margin-left: 0; 
+    margin-right: 0;
+    padding-bottom: 15px;
+    line-height: 1.5;
+}
