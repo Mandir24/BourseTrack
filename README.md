@@ -47,5 +47,3 @@ Le rapport final synthétise les performances sur les 100 jours ouvrés autour d
 * **Tableau HTML Stylisé** : Les tendances positives et négatives sont mises en évidence par des couleurs CSS.
 
 ***
-
-## 📂 Structure du Répertoire
